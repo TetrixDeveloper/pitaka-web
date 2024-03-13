@@ -1,6 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+
   :root {
     font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
