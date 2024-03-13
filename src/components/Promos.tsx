@@ -3,9 +3,11 @@ import { PromosImage } from "./assets/icons";
 import { DownloadButtonData } from "./constants";
 
 const PromosContainer = styled.div`
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
 `;
 
 const Title = styled.h2`
@@ -17,14 +19,14 @@ const Title = styled.h2`
 const PromoCard = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 20px;
   background: var(--Color-Light-Purple-light-purple-200, #c3bff9);
 
   @media (min-width: 768px) {
     flex-direction: row;
+    max-width: 1000px;
+    margin: 10px auto;
   }
 `;
 
@@ -55,7 +57,7 @@ const ButtonContainer = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -101,9 +103,9 @@ const Promos = () => {
         <LeftContent>
           <PromoTitle>Invite your friends. Earn up to ₱100</PromoTitle>
           <PromoSubtitle>
-            Earn ₱50 for each friend who registers from your QR code and deposits
-            a minimum of ₱500 in their Pitaka Wallet within 15 days of the
-            invite.
+            Earn ₱50 for each friend who registers from your QR code and
+            deposits a minimum of ₱500 in their Pitaka Wallet within 15 days of
+            the invite.
           </PromoSubtitle>
           <Disclaimer>
             DISCLAIMER: The terms and conditions of this promo are subject to
