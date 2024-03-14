@@ -22,10 +22,14 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
   justify-content: center;
+  max-width: 150px;
+  
   @media (min-width: 768px) {
     flex-direction: row;
+    max-width: 1000px;
   }
 `;
 

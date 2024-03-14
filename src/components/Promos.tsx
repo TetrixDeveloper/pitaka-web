@@ -5,8 +5,6 @@ import { DownloadButtonData } from "./constants";
 const PromosContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin: 50px 0;
 `;
 
@@ -14,6 +12,7 @@ const Title = styled.h2`
   font-size: 24px;
   margin-bottom: 20px;
   color: ${({ theme }) => theme.text};
+  text-align: center;
 `;
 
 const PromoCard = styled.div`
@@ -22,11 +21,13 @@ const PromoCard = styled.div`
   border-radius: 16px;
   overflow: hidden;
   background: var(--Color-Light-Purple-light-purple-200, #c3bff9);
+  text-align: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
     max-width: 1000px;
     margin: 10px auto;
+    text-align: left;
   }
 `;
 
@@ -35,13 +36,24 @@ const LeftContent = styled.div`
 `;
 
 const PromoTitle = styled.h3`
-  font-size: 20px;
-  margin-bottom: 10px;
+  color: var(--Color-Icons-surface, #613cb0);
+  font-family: Satoshi;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+  letter-spacing: -1.2px;
 `;
 
 const PromoSubtitle = styled.p`
-  font-size: 16px;
-  margin-bottom: 20px;
+  color: var(--Color-main-button-background, #613cb0);
+  font-family: Satoshi;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px; /* 123.333% */
+  letter-spacing: -0.6px;
+  max-width: 900px;
 `;
 
 const Disclaimer = styled.p`
@@ -54,8 +66,10 @@ const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 
   @media (min-width: 768px) {
+    margin-top: 20px;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -64,23 +78,33 @@ const ButtonContainer = styled.div`
 const DownloadButton = styled.a`
   display: flex;
   align-items: center;
-  padding: 12px 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 20px;
   border-radius: 30px;
-  background-color: #613cb0;
-  color: #fff;
+  background: var(--Color-secondary-button-background-inactive, #edeef1);
   text-decoration: none;
 
   &:hover {
-    background-color: #4d2f8a;
+    background: var(--Color-secondary-button-background-hover, #d4d5d8);
   }
 
   @media (min-width: 768px) {
     margin: 0 10px;
+    width: auto;
   }
 `;
 
 const DownloadButtonText = styled.span`
-  font-weight: bold;
+  color: var(--Color-text-primary, #25272c);
+  text-align: center;
+
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
   margin-left: 10px;
 `;
 
@@ -93,6 +117,11 @@ const RightContent = styled.div`
 const PromoImage = styled.img`
   max-width: 100%;
   height: auto;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+    height: 100%;
+  }
 `;
 
 const Promos = () => {
