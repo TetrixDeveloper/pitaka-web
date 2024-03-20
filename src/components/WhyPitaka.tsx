@@ -17,7 +17,7 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   margin: 0;
   color: var(--Color-Icons-surface, #613cb0);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
@@ -27,7 +27,7 @@ const Title = styled.h1`
 const Subtitle = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.text};
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;
@@ -58,7 +58,7 @@ const IconTitle = styled.h2`
   margin-top: 10px;
   margin-bottom: 5px;
   color: var(--Color-Icons-surface, #613cb0);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 18px;
   font-weight: 700;
 `;
@@ -66,7 +66,7 @@ const IconTitle = styled.h2`
 const IconSubtitle = styled.p`
   margin: 0;
   color: var(--Color-text-secondary, #6b7280);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;

@@ -37,7 +37,7 @@ const LeftContent = styled.div`
 
 const PromoTitle = styled.h3`
   color: var(--Color-Icons-surface, #613cb0);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -47,7 +47,7 @@ const PromoTitle = styled.h3`
 
 const PromoSubtitle = styled.p`
   color: var(--Color-main-button-background, #613cb0);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -99,7 +99,7 @@ const DownloadButtonText = styled.span`
   color: var(--Color-text-primary, #25272c);
   text-align: center;
 
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

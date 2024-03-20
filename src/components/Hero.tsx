@@ -21,7 +21,7 @@ const HeroContainer = styled.div`
 const Title = styled.h1`
   color: var(--Color-main-button-text, #f7f8f8);
   text-align: center;
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
@@ -41,7 +41,7 @@ const TextContainer = styled.div`
 const Subtitle = styled.p`
   color: var(--Color-main-button-text, #f7f8f8);
   text-align: center;
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -51,7 +51,7 @@ const Subtitle = styled.p`
 
 const DownloadTitle = styled.p`
   color: var(--Color-main-button-text, #f7f8f8);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 29px;
   font-style: normal;
   font-weight: 500;

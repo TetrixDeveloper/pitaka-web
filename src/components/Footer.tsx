@@ -67,7 +67,7 @@ const Title = styled.h2`
 const Subtitle = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.text};
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 40px;
   font-weight: 700;
   line-height: 112%;
@@ -81,7 +81,7 @@ const Subtitle = styled.p`
     justify-content: center;
     text-align: left;
     color: ${({ theme }) => theme.text};
-    font-family: Satoshi;
+    font-family: Satoshi-Variable;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -93,7 +93,7 @@ const Subtitle = styled.p`
 const Schedule = styled.p`
   margin: 0;
   color: var(--Color-text-secondary, #6b7280);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -111,7 +111,7 @@ const CTAButton = styled.button`
   display: flex;
   transition: background 0.3s ease;
   color: var(--Color-main-button-text, #f7f8f8);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
 
   &:hover {
     background: var(--Color-main-button-background-hover, #4d2f8a);
@@ -171,7 +171,7 @@ const BottomLeft = styled.div`
 const CopyRightText = styled.p`
   color: ${({ theme }) => theme.text};
   text-align: justify;
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
@@ -185,7 +185,7 @@ const LegalLinks = styled.div`
 `;
 
 const LegalLink = styled.a`
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 18px;
   color: ${({ theme }) => theme.text};
   text-decoration: none;
