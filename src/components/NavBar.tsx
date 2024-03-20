@@ -56,7 +56,7 @@ const NavLink = styled.a`
   margin: 0 20px;
   text-decoration: none;
   color: ${({ theme }) => theme.text};
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -91,7 +91,7 @@ const Button = styled.button`
 
 const ButtonText = styled.span`
   color: var(--Color-main-button-text, #f7f8f8);
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;

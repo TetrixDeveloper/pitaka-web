@@ -1,13 +1,19 @@
 import styled, { createGlobalStyle } from "styled-components";
+import SatoshiVariableTTF from './assets/fonts/Satoshi-Variable.ttf'; 
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+  @font-face {
+    font-family: 'Satoshi-Variable';
+    src: url(${SatoshiVariableTTF}) format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
 
   :root {
-    font-family: Satoshi, Inter, sans-serif;
+    font-family: Satoshi-Variable;
     line-height: 1.5;
     font-weight: 400;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -57,7 +63,7 @@ export const DownloadButtonText = styled.span`
   color: var(--Color-text-primary, #25272c);
   text-align: center;
 
-  font-family: Satoshi;
+  font-family: Satoshi-Variable;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
