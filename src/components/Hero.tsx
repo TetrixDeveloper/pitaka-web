@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HeroBG from "./assets/images/HeroBG.png";
 import { DownloadButtonData } from "./constants";
 import { ButtonContainer, DownloadButton, DownloadButtonText } from "../GlobalStyles";
+import QRCode from "react-qr-code";
 
 const HeroContainer = styled.div`
   background-image: url(${HeroBG});
@@ -29,6 +30,10 @@ const Title = styled.h1`
   letter-spacing: -2.16px;
   text-align: center;
   max-width: 599px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -60,6 +65,24 @@ const DownloadTitle = styled.p`
   text-align: center;
 `;
 
+const QrContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-width: 468px;
+`;
+
+const QrTitle = styled.p`
+  color: var(--Color-main-button-text, #f7f8f8);
+  font-family: Satoshi-Variable;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: -0.58px;
+  text-align: center;
+`;
+
 const Hero = () => {
   return (
     <HeroContainer>
@@ -84,6 +107,21 @@ const Hero = () => {
           </DownloadButton>
         ))}
       </ButtonContainer>
+      <QrContainer>
+        <QRCode
+          size={256}
+          style={{
+            height: "221px",
+            width: "215px",
+            borderRadius: "12px",
+            padding: "10px",
+            backgroundColor: "white",
+            border: "2px solid black"
+          }}
+          value="https://www.pitaka.io/get-wallet.html"
+        />
+        <QrTitle>or scan me!</QrTitle>
+      </QrContainer>
     </HeroContainer>
   );
 };
