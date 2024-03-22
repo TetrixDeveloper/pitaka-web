@@ -47,7 +47,7 @@ const LeftContent = styled.div`
 const Title = styled.h2`
   margin: 0;
   color: var(--Color-Icons-surface, #613cb0);
-  font-family: Inter;
+  font-family: Satoshi-Variable;
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
@@ -55,7 +55,7 @@ const Title = styled.h2`
   @media (min-width: 768px) {
     margin: 0;
     color: var(--Color-Icons-surface, #613cb0);
-    font-family: Inter;
+    font-family: Satoshi-Variable;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
