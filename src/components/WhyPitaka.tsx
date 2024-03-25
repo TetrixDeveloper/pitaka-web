@@ -8,6 +8,16 @@ const WhyPitakaContainer = styled.div`
   align-items: center;
   text-align: center;
   margin: 50px 0;
+  gap: 44px;
+`;
+
+const BenefitContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+  gap: 52px
 `;
 
 const TitleContainer = styled.div`
@@ -37,9 +47,10 @@ const IconContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 42px;
   margin-top: 60px;
   padding: 0 10px;
+  max-width: 1305px;
 `;
 
 const IconWrapper = styled.div`
@@ -95,22 +106,76 @@ const IconData = [
   },
 ];
 
+const OurValuesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 31px 49px 31px 49px;
+  background-color: var(--Color-main-button-background, #613CB0);
+  border-radius: 16px;
+  gap: 10px;
+  max-width: 1310px;
+`;
+
+const OurValuesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+`;
+
+const OurValuesTitle = styled.h2`
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: var(--Color-main-button-text, #F7F8F8);
+  font-family: Satoshi-Variable;
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+  }
+`;
+
+const OurValuesSubtitle = styled.p`
+  color: var(--Color-main-button-text, #F7F8F8);
+  font-family: Satoshi-Variable;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    text-align: center;
+  }
+`;
+
+
 const WhyPitaka = () => {
   return (
     <WhyPitakaContainer>
-      <TitleContainer>
-        <Title>Why choose Pitaka</Title>
-        <Subtitle>Easy, Simple, Secured</Subtitle>
-      </TitleContainer>
-      <IconContainer>
-        {IconData.map((data, index) => (
-          <IconWrapper key={index}>
-            <Icon src={data.icon} alt={data.title} />
-            <IconTitle>{data.title}</IconTitle>
-            <IconSubtitle>{data.subtitle}</IconSubtitle>
-          </IconWrapper>
-        ))}
-      </IconContainer>
+      <BenefitContainer>
+        <TitleContainer>
+          <Title>Why choose Pitaka</Title>
+          <Subtitle>Easy, Simple, Secured</Subtitle>
+        </TitleContainer>
+        <IconContainer>
+          {IconData.map((data, index) => (
+            <IconWrapper key={index}>
+              <Icon src={data.icon} alt={data.title} />
+              <IconTitle>{data.title}</IconTitle>
+              <IconSubtitle>{data.subtitle}</IconSubtitle>
+            </IconWrapper>
+          ))}
+        </IconContainer>
+      </BenefitContainer>
+      <OurValuesContainer>
+        <OurValuesWrapper>
+          <OurValuesTitle>Our Values</OurValuesTitle>
+          <OurValuesSubtitle>We are committed to delivering exceptional service, catering to the diverse needs of both large organizations and individuals. With inclusivity and innovation as our foundation, our goal is to lead as a top digital financial service provider, guaranteeing the utmost security and transparency in our e-wallet offerings.</OurValuesSubtitle>
+        </OurValuesWrapper>
+      </OurValuesContainer>
     </WhyPitakaContainer>
   );
 };

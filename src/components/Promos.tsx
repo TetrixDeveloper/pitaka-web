@@ -5,29 +5,35 @@ import { DownloadButtonData } from "./constants";
 const PromosContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: left;
   margin: 50px 0;
 `;
 
 const Title = styled.h2`
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 60px;
   color: ${({ theme }) => theme.text};
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 `;
 
 const PromoCard = styled.div`
   display: flex;
-  flex-direction: column;
-  border-radius: 16px;
+  flex-direction: row;
+  padding: 31px 49px 31px 49px;
   overflow: hidden;
   background: var(--Color-Light-Purple-light-purple-200, #c3bff9);
-  text-align: center;
+  text-align: left;
+  border-radius: 16px;
+  gap: 10px;
+  max-width: 1310px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    max-width: 1000px;
-    margin: 10px auto;
-    text-align: left;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
