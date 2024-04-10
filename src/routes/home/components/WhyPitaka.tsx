@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { FeesIcon, CedefiIcon, EaseIcon, SecureIcon } from "./assets/icons";
+import { FeesIcon, CedefiIcon, EaseIcon, SecureIcon } from "@/assets/icons";
 
 const WhyPitakaContainer = styled.div`
   display: flex;

@@ -1,4 +1,4 @@
-import { AppleIcon, GoogleIcon } from "./assets/icons";
+import { AppleIcon, GoogleIcon } from "@/assets/icons";
 
 export const DownloadButtonData = [
   {

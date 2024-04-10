@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 
-import { PitakaLogo, PitakaDark } from "./assets";
+import { PitakaLogo, PitakaDark } from "../assets";
 import MenuIcon from "@material-ui/icons/Menu";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import { IconButton, IconContainer } from "../GlobalStyles";
