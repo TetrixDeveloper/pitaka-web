@@ -32,7 +32,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/guides" element={<UserGuide />} />
-          {/* Add more routes as needed */}
         </Routes>
         <Footer />
       </Router>
