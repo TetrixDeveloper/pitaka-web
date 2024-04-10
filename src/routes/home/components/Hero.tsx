@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import HeroBG from "./assets/images/HeroBG.png";
+import HeroBG from "@/assets/images/HeroBG.png";
 import { DownloadButtonData } from "./constants";
-import { ButtonContainer, DownloadButton, DownloadButtonText } from "../GlobalStyles";
+import { ButtonContainer, DownloadButton, DownloadButtonText } from "../../../GlobalStyles";
 import QRCode from "react-qr-code";
 
 const HeroContainer = styled.div`

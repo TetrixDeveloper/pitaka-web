@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PromosImage } from "./assets/icons";
+import { PromosImage } from "@/assets/icons";
 import { DownloadButtonData } from "./constants";
 
 const PromosContainer = styled.div`
