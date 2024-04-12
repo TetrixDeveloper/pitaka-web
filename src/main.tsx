@@ -8,7 +8,9 @@ import { lightTheme, darkTheme } from "./theme";
 import GlobalStyles from "./GlobalStyles";
 import NavBar from "./components/NavBar";
 import Home from "./routes/home";
-import UserGuide from "./routes/user-guides";
+import About from "./routes/about";
+import UserGuide from "./routes/guides";
+import Faqs from "./routes/faqs";
 import Footer from "./components/Footer";
 import NotFound from "./routes/not-found";
 
@@ -32,7 +34,9 @@ const App = () => {
         <NavBar toggleTheme={toggleTheme} currentTheme={currentTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/guides" element={<UserGuide />} />
+          <Route path="/faqs" element={<Faqs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import HeroBG from "@/assets/images/HeroBG.png";
-import { DownloadButtonData } from "./constants";
+import { DownloadButtonData } from "@/components/constants";
 import { ButtonContainer, DownloadButton, DownloadButtonText } from "../../../GlobalStyles";
 import QRCode from "react-qr-code";
 

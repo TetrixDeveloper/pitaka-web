@@ -26,7 +26,7 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: var(--Color-text-primary, #25272C);
+  color: ${({ theme }) => theme.text};
   font-family: "Satoshi-Variable";
   font-size: 42.2px;
   font-style: normal;
@@ -36,7 +36,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  color: var(--Color-text-primary, #25272C);
+  color: ${({ theme }) => theme.text};
   font-family: "Satoshi-Variable";
   font-size: 21.1px;
   font-style: normal;
