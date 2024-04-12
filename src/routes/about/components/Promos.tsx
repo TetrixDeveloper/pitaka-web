@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { PromosImage } from "@/assets/icons";
-import { DownloadButtonData } from "./constants";
+import { DownloadButtonData } from "@/components/constants";
 
 const PromosContainer = styled.div`
   display: flex;

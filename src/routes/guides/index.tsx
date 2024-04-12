@@ -22,10 +22,7 @@ import Stepper from "./components/Stepper";
 const UserGuideContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 70px;
+  padding: 70px;
 `;
 
 const InnerFrame = styled.div`
@@ -211,7 +208,13 @@ const UserGuide = () => {
   return (
     <UserGuideContainer>
       <InnerFrame>
-        <BreadcrumbNav />
+        <BreadcrumbNav
+          items={[
+            { link: '/', label: '' },
+            { link: '/faqs', label: 'User Guide' },
+            { link: '/faqs', label: 'How to Add Money and Send Cash with Pitaka', isActive: true },
+          ]}
+        />
         <HowToContainer>
           <HowToTitle>How to</HowToTitle>
         </HowToContainer>
