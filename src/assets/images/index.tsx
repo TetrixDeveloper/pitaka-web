@@ -14,3 +14,4 @@ export { default as OneTimePassword } from './Send to_Op1.png';
 export { default as SendMoney } from './Send Money.png';
 export { default as ConfirmSendMoney } from './Send Money Confirmation.png';
 export { default as CompleteSendMoney } from './Send Money Complete.png';
+export { default as EdLogo } from './ed.png';

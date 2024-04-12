@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar";
 import Home from "./routes/home";
 import UserGuide from "./routes/user-guides";
 import Footer from "./components/Footer";
+import NotFound from "./routes/not-found";
 
 const App = () => {
   const [currentTheme, setCurrentTheme] = useState(
@@ -32,6 +33,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/guides" element={<UserGuide />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
