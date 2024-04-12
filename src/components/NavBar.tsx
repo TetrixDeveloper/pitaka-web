@@ -136,7 +136,7 @@ const NavBar = (props: NavBarProps) => {
       link: "/",
     },
     {
-      title: "About",
+      title: "About Us",
       link: "/about",
     },
     {
