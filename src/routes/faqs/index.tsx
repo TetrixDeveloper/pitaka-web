@@ -6,7 +6,9 @@ const FaqContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 70px;
+  scroll-behavior: smooth;
 `;
 
 const InnerFrame = styled.div`
@@ -26,7 +28,7 @@ const questionsAndAnswers = [
 
 const Faqs = () => {
   return (
-    <FaqContainer>
+    <FaqContainer id="faqs">
       <InnerFrame>
         <BreadcrumbNav
           items={[
