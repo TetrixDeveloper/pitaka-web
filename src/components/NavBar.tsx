@@ -145,19 +145,19 @@ const NavBar = (props: NavBarProps) => {
   const NavLinkData = [
     {
       title: "Home",
-      link: "#home",
+      link: "/#",
     },
     {
       title: "About Us",
-      link: "#about",
+      link: "/#about",
     },
     {
       title: "User Guide",
-      link: "#guides",
+      link: "/#guides",
     },
     {
       title: "FAQs",
-      link: "#faqs",
+      link: "/#faqs",
     },
     {
       title: "Link",
@@ -183,7 +183,7 @@ const NavBar = (props: NavBarProps) => {
               href={link.link}
               className={pathname === link.link ? "active" : ""}
               onClick={() => {
-                if (link.link.startsWith("#")) {
+                if (link.link.startsWith("/#")) {
                   scrollToSection(link.link.substring(1));
                 } else {
                   window.open(link.link, "_blank");

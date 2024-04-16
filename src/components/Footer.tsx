@@ -261,11 +261,11 @@ const ProductLinks = [
   },
   {
     title: "User Guides",
-    link: "#guides",
+    link: "/#guides",
   },
   {
     title: "About Pitaka",
-    link: "#about",
+    link: "/#about",
   },
 ];
 
@@ -276,7 +276,7 @@ const CompanyLinks = [
   },
   {
     title: "Our Values",
-    link: "#values",
+    link: "/#values",
   },
 ];
 
@@ -287,7 +287,7 @@ const SupportLinks = [
   },
   {
     title: "FAQs",
-    link: "#faqs",
+    link: "/#faqs",
   },
 ];
 
