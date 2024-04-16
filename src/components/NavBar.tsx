@@ -130,22 +130,34 @@ const NavBar = (props: NavBarProps) => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToSection = (sectionId: string, offset: number = 50) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.scrollMarginTop = `${offset}px`;
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   const NavLinkData = [
     {
       title: "Home",
-      link: "/",
+      link: "#home",
     },
     {
       title: "About Us",
-      link: "/about",
+      link: "#about",
     },
     {
       title: "User Guide",
-      link: "/guides",
+      link: "#guides",
     },
     {
       title: "FAQs",
-      link: "/faqs",
+      link: "#faqs",
     },
     {
       title: "Link",
@@ -170,7 +182,14 @@ const NavBar = (props: NavBarProps) => {
               key={link.title}
               href={link.link}
               className={pathname === link.link ? "active" : ""}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                if (link.link.startsWith("#")) {
+                  scrollToSection(link.link.substring(1));
+                } else {
+                  window.open(link.link, "_blank");
+                }
+                setMenuOpen(false);
+              }}
             >
               {link.title}
             </NavLink>

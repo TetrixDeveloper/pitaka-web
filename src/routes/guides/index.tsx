@@ -206,7 +206,7 @@ const SendFundSteps = [
 
 const UserGuide = () => {
   return (
-    <UserGuideContainer>
+    <UserGuideContainer id="guides">
       <InnerFrame>
         <BreadcrumbNav
           items={[

@@ -85,7 +85,7 @@ const QrTitle = styled.p`
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <Title>The wallet app that works for you.</Title>
       <TextContainer>
         <Subtitle>

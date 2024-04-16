@@ -154,7 +154,7 @@ const OurValuesSubtitle = styled.p`
 
 const WhyPitaka = () => {
   return (
-    <WhyPitakaContainer>
+    <WhyPitakaContainer id="about">
       <BenefitContainer>
         <TitleContainer>
           <Title>Why choose Pitaka</Title>
@@ -170,7 +170,7 @@ const WhyPitaka = () => {
           ))}
         </IconContainer>
       </BenefitContainer>
-      <OurValuesContainer>
+      <OurValuesContainer id="values">
         <OurValuesWrapper>
           <OurValuesTitle>Our Values</OurValuesTitle>
           <OurValuesSubtitle>We are committed to delivering exceptional service, catering to the diverse needs of both large organizations and individuals. With inclusivity and innovation as our foundation, our goal is to lead as a top digital financial service provider, guaranteeing the utmost security and transparency in our e-wallet offerings.</OurValuesSubtitle>

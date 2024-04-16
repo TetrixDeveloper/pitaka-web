@@ -101,7 +101,7 @@ const Schedule = styled.p`
   letter-spacing: -0.4px;
 `;
 
-const CTAButton = styled.button`
+const CTAButton = styled.a`
   margin: 20px 10px 0 0;
   padding: 12px 24px;
   border-radius: 70px;
@@ -112,11 +112,13 @@ const CTAButton = styled.button`
   transition: background 0.3s ease;
   color: var(--Color-main-button-text, #f7f8f8);
   font-family: Satoshi-Variable;
+  text-decoration: none;
 
   &:hover {
     background: var(--Color-main-button-background-hover, #4d2f8a);
   }
 `;
+
 
 const RightContent = styled.div`
   display: flex;
@@ -240,49 +242,41 @@ const LinkText = styled.a`
 const SocialMediaLinksData = [
   {
     icon: <Facebook />,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/PitakaPH",
   },
   {
     icon: <Twitter />,
-    link: "https://www.twitter.com",
+    link: "https://www.twitter.com/tetrixnetwork",
   },
   {
     icon: <Instagram />,
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/tetrixnetwork",
   },
 ];
 
 const ProductLinks = [
   {
-    title: "Work with Us",
-    link: "#",
-  },
-  {
     title: "Tetrix Link",
-    link: "#",
+    link: "https://link.tetrix.xyz",
   },
   {
     title: "User Guides",
-    link: "#",
+    link: "#guides",
   },
   {
     title: "About Pitaka",
-    link: "#",
+    link: "#about",
   },
 ];
 
 const CompanyLinks = [
   {
+    title: "Work with Us",
+    link: "#",
+  },
+  {
     title: "Our Values",
-    link: "#",
-  },
-  {
-    title: "Our Commitment",
-    link: "#",
-  },
-  {
-    title: "Our Team",
-    link: "#",
+    link: "#values",
   },
 ];
 
@@ -293,11 +287,23 @@ const SupportLinks = [
   },
   {
     title: "FAQs",
-    link: "#",
+    link: "#faqs",
   },
 ];
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string, offset: number = 50) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.scrollMarginTop = `${offset}px`;
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <FooterContainer>
       <ContentWrapper>
@@ -305,7 +311,7 @@ const Footer = () => {
           <Title>Have Questions?</Title>
           <Subtitle>We have 24/7 Support available</Subtitle>
           <Schedule>from Mondays - Sunday</Schedule>
-          <CTAButton>Talk to the team</CTAButton>
+          <CTAButton href="https://support.pitaka.io">Talk to the team</CTAButton>
         </LeftContent>
         <RightContent>
           <Column>
@@ -345,17 +351,25 @@ const Footer = () => {
           <CopyRightText>©2024 Pitaka. All rights reserved.</CopyRightText>
         </BottomLeft>
         <LegalLinks>
-          <LegalLink href="#">Terms of Service</LegalLink>
+          <LegalLink href="https://www.support.pitaka.io/docs/terms-of-use">Terms of Use</LegalLink>
           <DividerVertical orientation="vertical" flexItem />
-          <LegalLink href="#">Privacy Policy</LegalLink>
-          <DividerVertical orientation="vertical" flexItem />
-          <LegalLink href="#">Cookie Policy</LegalLink>
+          <LegalLink href="https://www.support.pitaka.io/docs/privacy-policy/">Privacy Policy</LegalLink>
           <DividerVertical orientation="vertical" flexItem />
         </LegalLinks>
         <BottomRight>
           <SocialIconContainer>
             {SocialMediaLinksData.map((data, index) => (
-              <SocialMediaLinks key={index} href={data.link}>
+              <SocialMediaLinks
+                key={index}
+                href={data.link}
+                onClick={() => {
+                  if (data.link.startsWith("#")) {
+                    scrollToSection(data.link.substring(1));
+                  } else {
+                    window.open(data.link, "_blank");
+                  }
+                }}
+              >
                 <SocialMediaIconsFilled>{data.icon}</SocialMediaIconsFilled>
               </SocialMediaLinks>
             ))}
