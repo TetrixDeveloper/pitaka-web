@@ -7,7 +7,7 @@ import {
   DownloadButton,
   DownloadButtonText,
 } from "../../../GlobalStyles";
-import QRCode from "react-qr-code";
+//import QRCode from "react-qr-code";
 
 const HeroContainer = styled.div`
   background-image: url(${HeroBG});
