@@ -151,6 +151,10 @@ const OurValuesSubtitle = styled.p`
   }
 `;
 
+const OurValuesStart = styled.div`
+ display: flex;
+`
+
 
 const WhyPitaka = () => {
   return (
@@ -170,7 +174,8 @@ const WhyPitaka = () => {
           ))}
         </IconContainer>
       </BenefitContainer>
-      <OurValuesContainer id="values">
+      <OurValuesStart id="values" />
+      <OurValuesContainer>
         <OurValuesWrapper>
           <OurValuesTitle>Our Values</OurValuesTitle>
           <OurValuesSubtitle>We are committed to delivering exceptional service, catering to the diverse needs of both large organizations and individuals. With inclusivity and innovation as our foundation, our goal is to lead as a top digital financial service provider, guaranteeing the utmost security and transparency in our e-wallet offerings.</OurValuesSubtitle>

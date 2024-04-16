@@ -89,7 +89,7 @@ const DownloadTitle = styled.p`
 
 const Hero = () => {
   return (
-    <HeroContainer id="home">
+    <HeroContainer>
       <Title>The wallet app that works for you.</Title>
       <TextContainer>
         <Subtitle>
