@@ -16,11 +16,11 @@ import NotFound from "./routes/not-found";
 
 const App = () => {
   const [currentTheme, setCurrentTheme] = useState(
-    localStorage.getItem("theme") || "dark"
+    localStorage.getItem("theme") || "light"
   );
 
   const toggleTheme = () => {
-    setCurrentTheme(currentTheme === "dark" ? "light" : "dark");
+    setCurrentTheme(currentTheme === "light" ? "dark" : "light");
   };
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
   }, [currentTheme]);
 
   return (
-    <ThemeProvider theme={currentTheme === "dark" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={currentTheme === "dark" ? darkTheme : lightTheme}>
       <Router>
         <GlobalStyles />
         <NavBar toggleTheme={toggleTheme} currentTheme={currentTheme} />
