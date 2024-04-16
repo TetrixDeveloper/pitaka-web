@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 import HeroBG from "@/assets/images/HeroBG.png";
 import { DownloadButtonData } from "@/components/constants";
-import { ButtonContainer, DownloadButton, DownloadButtonText } from "../../../GlobalStyles";
+import {
+  ButtonContainer,
+  DownloadButton,
+  DownloadButtonText,
+} from "../../../GlobalStyles";
 import QRCode from "react-qr-code";
 
 const HeroContainer = styled.div`
@@ -65,23 +69,23 @@ const DownloadTitle = styled.p`
   text-align: center;
 `;
 
-const QrContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  max-width: 468px;
-`;
+//const QrContainer = styled.div`
+//  display: flex;
+//  flex-direction: column;
+//  gap: 11px;
+//  max-width: 468px;
+//`;
 
-const QrTitle = styled.p`
-  color: var(--Color-main-button-text, #f7f8f8);
-  font-family: Satoshi-Variable;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 36px */
-  letter-spacing: -0.58px;
-  text-align: center;
-`;
+//const QrTitle = styled.p`
+//  color: var(--Color-main-button-text, #f7f8f8);
+//  font-family: Satoshi-Variable;
+//  font-size: 24px;
+//  font-style: normal;
+//  font-weight: 500;
+//  line-height: 150%; /* 36px */
+//  letter-spacing: -0.58px;
+//  text-align: center;
+//`;
 
 const Hero = () => {
   return (
@@ -107,7 +111,7 @@ const Hero = () => {
           </DownloadButton>
         ))}
       </ButtonContainer>
-      <QrContainer>
+      {/*<QrContainer>
         <QRCode
           size={256}
           style={{
@@ -121,7 +125,7 @@ const Hero = () => {
           value="https://www.pitaka.io/get-wallet.html"
         />
         <QrTitle>or scan me!</QrTitle>
-      </QrContainer>
+      </QrContainer>*/}
     </HeroContainer>
   );
 };
