@@ -311,7 +311,7 @@ const Footer = () => {
           <Title>Have Questions?</Title>
           <Subtitle>We have 24/7 Support available</Subtitle>
           <Schedule>from Mondays - Sunday</Schedule>
-          <CTAButton href="https://support.pitaka.io">Talk to the team</CTAButton>
+          <CTAButton href="https://docs.pitaka.io">Talk to the team</CTAButton>
         </LeftContent>
         <RightContent>
           <Column>

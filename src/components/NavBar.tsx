@@ -168,7 +168,7 @@ const NavBar = (props: NavBarProps) => {
   if (isMobile) {
     NavLinkData.push({
       title: "Support",
-      link: "https://support.pitaka.io",
+      link: "https://docs.pitaka.io",
     });
   }
 
@@ -196,7 +196,7 @@ const NavBar = (props: NavBarProps) => {
           ))}
         </NavLinkContainer>
         <Button>
-          <StyledLink href="https://support.pitaka.io">
+          <StyledLink href="https://docs.pitaka.io">
             <ButtonText>Support</ButtonText>
           </StyledLink>
         </Button>
