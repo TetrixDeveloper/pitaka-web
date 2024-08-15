@@ -35,7 +35,7 @@ const Circle = styled.div`
   z-index: 2;
 
   @media (max-width:768px) {
-    width: 46px;
+    width: 38px;
     height: 38px;
     border-radius: 34px;
   }
@@ -81,19 +81,28 @@ const Image = styled.img`
   }
 `;
 
-const ImageContainer =  styled.div`
+const ImageContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 60%;
   padding-left: 30%;
   margin-top: 30px;
+  height: fit-content;
 
   @media (max-width: 768px) {
+    width: 40%;
     flex-direction: column;
+    margin: 20px 40px 20px 80px;
     align-items: center;
-    padding-left: 25%;
+    padding-left: 0;
+    width: auto;
+
+    img {
+      height: auto;
+      object-fit: cover;
+    }
   }
-`
+`;
 
 interface StepperProps {
   count: number;
